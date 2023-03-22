@@ -5,6 +5,7 @@
   --hover-price-color: #ff1b1b;
   --bg-backdrop: #44c697;
   --accent-color: #44c697;
+  --logo-company-color: #ffd001;
 
   --primary-font-size: 18px;
   --primary-font-weight: 700;
@@ -13,6 +14,8 @@
   --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap'); */
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -719,6 +722,7 @@ section {
 }
 
 .footer__box {
+  position: relative;
   max-width: 831px;
   height: 100%;
   padding: 50px 0 15px 0;
@@ -771,7 +775,17 @@ section {
 
 .nav-location {
   width: 217px;
-  margin-left: 87px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-location {
+    margin-left: 87px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-location {
+    margin-top: 30px;
+  }
 }
 
 .footer__icon--phone {
@@ -831,7 +845,36 @@ section {
 .footer__nav-soc {
   margin-top: 30px;
 }
+.footer__company {
+  margin-top: 20px;
+  font-family: 'Cuprum', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 261px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .footer__company {
+    margin-top: 83px;
+  }
+}
 
-.footer__not {
-  bottom: 0;
+.logo-company {
+  margin-right: 3px;
+  fill: var(--logo-company-color);
+}
+
+.footer__copi {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__copi {
+    display: block;
+  }
 }
