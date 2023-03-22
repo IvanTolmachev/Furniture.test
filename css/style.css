@@ -356,6 +356,10 @@ section {
 
 .slider-text {
   margin-top: 50px;
+  font-size: 18px;
+}
+
+.slider-text span {
   font-size: 24px;
 }
 
