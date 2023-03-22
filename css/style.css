@@ -14,6 +14,9 @@
   --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap'); */
 
@@ -881,4 +884,23 @@ section {
   .footer__copi {
     display: block;
   }
+}
+
+.anchor {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  left: -15px;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  transition: transform 250ms var(--timing-function);
+}
+
+.anchor:hover,
+.anchor:focus {
+  transform: scale(1.1);
 }
