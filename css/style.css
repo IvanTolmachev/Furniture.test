@@ -150,6 +150,7 @@ section {
 .header__nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav {
@@ -224,7 +225,7 @@ section {
   display: flex;
   align-items: center;
   height: 105px;
-  /* justify-content: space-between; */
+  flex-wrap: wrap;
 }
 
 .logo {
